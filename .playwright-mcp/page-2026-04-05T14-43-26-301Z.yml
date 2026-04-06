@@ -1,0 +1,59 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "B Beauty" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e9]: B
+        - generic [ref=e10]: Beauty
+      - navigation [ref=e11]:
+        - link "Главная" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "Услуги" [ref=e13] [cursor=pointer]:
+          - /url: /services
+        - link "Мастера" [ref=e14] [cursor=pointer]:
+          - /url: /masters
+        - link "Акции" [ref=e15] [cursor=pointer]:
+          - /url: /promotions
+        - link "Контакты" [ref=e16] [cursor=pointer]:
+          - /url: /contacts
+      - generic [ref=e17]:
+        - link "Войти" [ref=e18] [cursor=pointer]:
+          - /url: /login
+        - link "Регистрация" [ref=e19] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e28]:
+        - heading "Салон красоты Beauty" [level=1] [ref=e29]:
+          - text: Салон красоты
+          - text: Beauty
+        - paragraph [ref=e30]: Запишитесь онлайн к лучшим мастерам. Качество и комфорт — наш приоритет.
+        - generic [ref=e31]:
+          - link "Записаться онлайн" [ref=e32] [cursor=pointer]:
+            - /url: /booking
+          - link "Каталог услуг" [ref=e33] [cursor=pointer]:
+            - /url: /services
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - heading "Наши услуги" [level=2] [ref=e37]
+          - paragraph [ref=e38]: Выберите категорию и найдите идеальную процедуру для себя
+        - link "Все услуги" [ref=e56] [cursor=pointer]:
+          - /url: /services
+          - text: Все услуги
+          - img [ref=e57]
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - heading "Популярные услуги" [level=2] [ref=e62]
+          - paragraph [ref=e63]: Самые востребованные процедуры, которые выбирают наши клиенты
+        - link "Смотреть все услуги" [ref=e78] [cursor=pointer]:
+          - /url: /services
+          - text: Смотреть все услуги
+          - img [ref=e79]
+      - generic [ref=e82]:
+        - heading "Наши мастера" [level=2] [ref=e83]
+        - paragraph [ref=e84]: Профессионалы с многолетним опытом, которые заботятся о вашей красоте
+      - generic [ref=e105]:
+        - heading "Готовы к преображению?" [level=2] [ref=e106]
+        - paragraph [ref=e107]: Запишитесь прямо сейчас и получите скидку 10% на первый визит
+        - link "Записаться со скидкой" [ref=e108] [cursor=pointer]:
+          - /url: /booking

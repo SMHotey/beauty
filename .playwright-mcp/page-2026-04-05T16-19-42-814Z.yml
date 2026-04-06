@@ -1,0 +1,280 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "B Beauty" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e9]: B
+        - generic [ref=e10]: Beauty
+      - navigation [ref=e11]:
+        - link "Главная" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "Услуги" [ref=e13] [cursor=pointer]:
+          - /url: /services
+        - link "Мастера" [ref=e14] [cursor=pointer]:
+          - /url: /masters
+        - link "Акции" [ref=e15] [cursor=pointer]:
+          - /url: /promotions
+        - link "Контакты" [ref=e16] [cursor=pointer]:
+          - /url: /contacts
+      - generic [ref=e17]:
+        - link "Войти" [ref=e18] [cursor=pointer]:
+          - /url: /login
+        - link "Регистрация" [ref=e19] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e20]:
+    - generic [ref=e240]:
+      - generic [ref=e247]:
+        - heading "Салон красоты Beauty" [level=1] [ref=e248]:
+          - text: Салон красоты
+          - text: Beauty
+        - paragraph [ref=e249]: Запишитесь онлайн к лучшим мастерам. Качество и комфорт — наш приоритет.
+        - generic [ref=e250]:
+          - link "Записаться онлайн" [ref=e251] [cursor=pointer]:
+            - /url: /booking
+          - link "Каталог услуг" [ref=e252] [cursor=pointer]:
+            - /url: /services
+          - link "Каталог услуг" [ref=e253] [cursor=pointer]:
+            - /url: /services
+      - generic [ref=e255]:
+        - generic [ref=e256]:
+          - heading "Наши услуги" [level=2] [ref=e257]
+          - paragraph [ref=e258]: Выберите категорию и найдите идеальную процедуру для себя
+        - generic [ref=e259]:
+          - button "💫 Все услуги" [ref=e260] [cursor=pointer]:
+            - generic [ref=e262]: 💫
+            - heading "Все услуги" [level=3] [ref=e265]
+          - button "Парикмахерские услуги ✂️ Парикмахерские услуги" [active] [ref=e266] [cursor=pointer]:
+            - img "Парикмахерские услуги" [ref=e268]
+            - generic [ref=e270]:
+              - generic [ref=e271]: ✂️
+              - heading "Парикмахерские услуги" [level=3] [ref=e272]
+          - button "Ногтевой сервис 💅 Ногтевой сервис" [ref=e273] [cursor=pointer]:
+            - img "Ногтевой сервис" [ref=e275]
+            - generic [ref=e277]:
+              - generic [ref=e278]: 💅
+              - heading "Ногтевой сервис" [level=3] [ref=e279]
+          - button "✨ Косметология" [ref=e280] [cursor=pointer]:
+            - generic [ref=e283]:
+              - generic [ref=e284]: ✨
+              - heading "Косметология" [level=3] [ref=e285]
+          - button "Визаж 💄 Визаж" [ref=e286] [cursor=pointer]:
+            - img "Визаж" [ref=e288]
+            - generic [ref=e290]:
+              - generic [ref=e291]: 💄
+              - heading "Визаж" [level=3] [ref=e292]
+          - button "Массаж 💆 Массаж" [ref=e293] [cursor=pointer]:
+            - img "Массаж" [ref=e295]
+            - generic [ref=e297]:
+              - generic [ref=e298]: 💆
+              - heading "Массаж" [level=3] [ref=e299]
+        - link "Все услуги" [ref=e301] [cursor=pointer]:
+          - /url: /services
+          - text: Все услуги
+          - img [ref=e302]
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - heading "Все услуги" [level=2] [ref=e307]
+          - paragraph [ref=e308]: Самые востребованные процедуры, которые выбирают наши клиенты
+        - generic [ref=e309]:
+          - link "1 000 ₽ Детская стрижка Парикмахерские услуги 30 мин" [ref=e310] [cursor=pointer]:
+            - /url: /services/detskaya-strizhka
+            - generic [ref=e314]: 1 000 ₽
+            - generic [ref=e315]:
+              - heading "Детская стрижка" [level=3] [ref=e316]
+              - generic [ref=e317]:
+                - generic [ref=e318]: Парикмахерские услуги
+                - generic [ref=e319]: 30 мин
+          - link "2 500 ₽ Женская стрижка Парикмахерские услуги 60 мин" [ref=e320] [cursor=pointer]:
+            - /url: /services/zhenskaya-strizhka
+            - generic [ref=e324]: 2 500 ₽
+            - generic [ref=e325]:
+              - heading "Женская стрижка" [level=3] [ref=e326]
+              - generic [ref=e327]:
+                - generic [ref=e328]: Парикмахерские услуги
+                - generic [ref=e329]: 60 мин
+          - link "1 500 ₽ Мужская стрижка Парикмахерские услуги 30 мин" [ref=e537] [cursor=pointer]:
+            - /url: /services/muzhskaya-strizhka
+            - generic [ref=e335]: 1 500 ₽
+            - generic [ref=e336]:
+              - heading "Мужская стрижка" [level=3] [ref=e337]
+              - generic [ref=e338]:
+                - generic [ref=e339]: Парикмахерские услуги
+                - generic [ref=e340]: 30 мин
+          - link "5 000 ₽ Окрашивание волос Парикмахерские услуги 120 мин" [ref=e538] [cursor=pointer]:
+            - /url: /services/okrashivanie-volos
+            - generic [ref=e346]: 5 000 ₽
+            - generic [ref=e347]:
+              - heading "Окрашивание волос" [level=3] [ref=e348]
+              - generic [ref=e349]:
+                - generic [ref=e350]: Парикмахерские услуги
+                - generic [ref=e351]: 120 мин
+          - link "1 800 ₽ Укладка Парикмахерские услуги 45 мин" [ref=e539] [cursor=pointer]:
+            - /url: /services/ukladka
+            - generic [ref=e357]: 1 800 ₽
+            - generic [ref=e358]:
+              - heading "Укладка" [level=3] [ref=e359]
+              - generic [ref=e360]:
+                - generic [ref=e361]: Парикмахерские услуги
+                - generic [ref=e362]: 45 мин
+          - link "Маникюр 2 000 ₽ Маникюр Ногтевой сервис 60 мин" [ref=e540] [cursor=pointer]:
+            - /url: /services/manikyur
+            - generic [ref=e541]:
+              - img "Маникюр" [ref=e542]
+              - generic [ref=e545]: 2 000 ₽
+            - generic [ref=e546]:
+              - heading "Маникюр" [level=3] [ref=e547]
+              - generic [ref=e548]:
+                - generic [ref=e549]: Ногтевой сервис
+                - generic [ref=e550]: 60 мин
+          - link "Наращивание ногтей 4 500 ₽ Наращивание ногтей Ногтевой сервис 120 мин" [ref=e551] [cursor=pointer]:
+            - /url: /services/narashchivanie-nogtey
+            - generic [ref=e552]:
+              - img "Наращивание ногтей" [ref=e553]
+              - generic [ref=e556]: 4 500 ₽
+            - generic [ref=e557]:
+              - heading "Наращивание ногтей" [level=3] [ref=e558]
+              - generic [ref=e559]:
+                - generic [ref=e560]: Ногтевой сервис
+                - generic [ref=e561]: 120 мин
+          - link "Педикюр 3 000 ₽ Педикюр Ногтевой сервис 90 мин" [ref=e562] [cursor=pointer]:
+            - /url: /services/pedikyur
+            - generic [ref=e563]:
+              - img "Педикюр" [ref=e564]
+              - generic [ref=e567]: 3 000 ₽
+            - generic [ref=e568]:
+              - heading "Педикюр" [level=3] [ref=e569]
+              - generic [ref=e570]:
+                - generic [ref=e571]: Ногтевой сервис
+                - generic [ref=e572]: 90 мин
+          - link "Мезотерапия 4 000 ₽ Мезотерапия Косметология 30 мин" [ref=e573] [cursor=pointer]:
+            - /url: /services/mezoterapiya
+            - generic [ref=e574]:
+              - img "Мезотерапия" [ref=e575]
+              - generic [ref=e578]: 4 000 ₽
+            - generic [ref=e579]:
+              - heading "Мезотерапия" [level=3] [ref=e580]
+              - generic [ref=e581]:
+                - generic [ref=e582]: Косметология
+                - generic [ref=e583]: 30 мин
+          - link "Пилинг 2 500 ₽ Пилинг Косметология 45 мин" [ref=e584] [cursor=pointer]:
+            - /url: /services/piling
+            - generic [ref=e585]:
+              - img "Пилинг" [ref=e586]
+              - generic [ref=e589]: 2 500 ₽
+            - generic [ref=e590]:
+              - heading "Пилинг" [level=3] [ref=e591]
+              - generic [ref=e592]:
+                - generic [ref=e593]: Косметология
+                - generic [ref=e594]: 45 мин
+          - link "Чистка лица 3 500 ₽ Чистка лица Косметология 60 мин" [ref=e595] [cursor=pointer]:
+            - /url: /services/chistka-litsa
+            - generic [ref=e596]:
+              - img "Чистка лица" [ref=e597]
+              - generic [ref=e600]: 3 500 ₽
+            - generic [ref=e601]:
+              - heading "Чистка лица" [level=3] [ref=e602]
+              - generic [ref=e603]:
+                - generic [ref=e604]: Косметология
+                - generic [ref=e605]: 60 мин
+          - link "Вечерний макияж 3 500 ₽ Вечерний макияж Визаж 60 мин" [ref=e606] [cursor=pointer]:
+            - /url: /services/vecherniy-makiyazh
+            - generic [ref=e607]:
+              - img "Вечерний макияж" [ref=e608]
+              - generic [ref=e611]: 3 500 ₽
+            - generic [ref=e612]:
+              - heading "Вечерний макияж" [level=3] [ref=e613]
+              - generic [ref=e614]:
+                - generic [ref=e615]: Визаж
+                - generic [ref=e616]: 60 мин
+          - link "Дневной макияж 2 000 ₽ Дневной макияж Визаж 45 мин" [ref=e617] [cursor=pointer]:
+            - /url: /services/dnevnoy-makiyazh
+            - generic [ref=e618]:
+              - img "Дневной макияж" [ref=e619]
+              - generic [ref=e622]: 2 000 ₽
+            - generic [ref=e623]:
+              - heading "Дневной макияж" [level=3] [ref=e624]
+              - generic [ref=e625]:
+                - generic [ref=e626]: Визаж
+                - generic [ref=e627]: 45 мин
+          - link "Классический массаж 3 000 ₽ Классический массаж Массаж 60 мин" [ref=e628] [cursor=pointer]:
+            - /url: /services/klassicheskiy-massazh
+            - generic [ref=e629]:
+              - img "Классический массаж" [ref=e630]
+              - generic [ref=e633]: 3 000 ₽
+            - generic [ref=e634]:
+              - heading "Классический массаж" [level=3] [ref=e635]
+              - generic [ref=e636]:
+                - generic [ref=e637]: Массаж
+                - generic [ref=e638]: 60 мин
+          - link "Расслабляющий массаж 4 500 ₽ Расслабляющий массаж Массаж 90 мин" [ref=e639] [cursor=pointer]:
+            - /url: /services/rasslablyayushchiy-massazh
+            - generic [ref=e640]:
+              - img "Расслабляющий массаж" [ref=e641]
+              - generic [ref=e644]: 4 500 ₽
+            - generic [ref=e645]:
+              - heading "Расслабляющий массаж" [level=3] [ref=e646]
+              - generic [ref=e647]:
+                - generic [ref=e648]: Массаж
+                - generic [ref=e649]: 90 мин
+        - link "Смотреть все услуги" [ref=e471] [cursor=pointer]:
+          - /url: /services
+          - text: Смотреть все услуги
+          - img [ref=e472]
+      - generic [ref=e474]:
+        - generic [ref=e475]:
+          - heading "Наши мастера" [level=2] [ref=e476]
+          - paragraph [ref=e477]: Профессионалы с многолетним опытом, которые заботятся о вашей красоте
+        - generic [ref=e478]:
+          - link "А Анна Иванова Стилист с 10-летним опытом 4.0" [ref=e479] [cursor=pointer]:
+            - /url: /masters/1
+            - generic [ref=e481]: А
+            - heading "Анна Иванова" [level=3] [ref=e482]
+            - paragraph [ref=e483]: Стилист с 10-летним опытом
+            - generic [ref=e484]:
+              - img [ref=e485]
+              - generic [ref=e487]: "4.0"
+          - link "П Петр Сидоров Косметолог-дерматолог" [ref=e488] [cursor=pointer]:
+            - /url: /masters/2
+            - generic [ref=e490]: П
+            - heading "Петр Сидоров" [level=3] [ref=e491]
+            - paragraph [ref=e492]: Косметолог-дерматолог
+          - link "М Мария Козлова Мастер маникюра и педикюра. 7 лет опыта. 4.5" [ref=e493] [cursor=pointer]:
+            - /url: /masters/3
+            - generic [ref=e495]: М
+            - heading "Мария Козлова" [level=3] [ref=e496]
+            - paragraph [ref=e497]: Мастер маникюра и педикюра. 7 лет опыта.
+            - generic [ref=e498]:
+              - img [ref=e499]
+              - generic [ref=e501]: "4.5"
+      - generic [ref=e503]:
+        - generic [ref=e504]:
+          - heading "Акции и спецпредложения" [level=2] [ref=e505]
+          - paragraph [ref=e506]: Выгодные предложения для наших клиентов
+        - generic [ref=e507]:
+          - generic [ref=e508]:
+            - generic [ref=e509]:
+              - heading "Весеннее обновление" [level=3] [ref=e510]
+              - generic [ref=e511]: "-15.00%"
+            - paragraph [ref=e512]: Скидка 15% на все услуги парикмахерского отделения. Обновите свой образ к весне!
+            - paragraph [ref=e513]: Действует до 30.04.2026
+          - generic [ref=e514]:
+            - generic [ref=e515]:
+              - heading "Весеннее обновление" [level=3] [ref=e516]
+              - generic [ref=e517]: "-15.00%"
+            - paragraph [ref=e518]: Скидка 15% на все услуги парикмахерского отделения. Обновите свой образ к весне!
+            - paragraph [ref=e519]: Действует до 30.04.2026
+          - generic [ref=e520]:
+            - generic [ref=e521]:
+              - heading "Скидка 20% на первое посещение" [level=3] [ref=e522]
+              - generic [ref=e523]: "-20.00%"
+            - paragraph [ref=e524]: Получите скидку 20% на любую услугу при первом визите в наш салон. Акция действует для новых клиентов.
+            - paragraph [ref=e525]: Действует до 05.05.2026
+        - link "Все акции" [ref=e527] [cursor=pointer]:
+          - /url: /promotions
+          - text: Все акции
+          - img [ref=e528]
+      - generic [ref=e533]:
+        - heading "Готовы к преображению?" [level=2] [ref=e534]
+        - paragraph [ref=e535]: Запишитесь прямо сейчас и получите скидку 10% на первый визит
+        - link "Записаться со скидкой" [ref=e536] [cursor=pointer]:
+          - /url: /booking

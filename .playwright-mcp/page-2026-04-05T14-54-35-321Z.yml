@@ -1,0 +1,38 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "B Beauty" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e9]: B
+        - generic [ref=e10]: Beauty
+      - navigation [ref=e11]:
+        - link "Главная" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "Услуги" [ref=e13] [cursor=pointer]:
+          - /url: /services
+        - link "Мастера" [ref=e14] [cursor=pointer]:
+          - /url: /masters
+        - link "Акции" [ref=e15] [cursor=pointer]:
+          - /url: /promotions
+        - link "Контакты" [ref=e16] [cursor=pointer]:
+          - /url: /contacts
+      - generic [ref=e17]:
+        - link "Войти" [ref=e18] [cursor=pointer]:
+          - /url: /login
+        - link "Регистрация" [ref=e19] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - heading "Вход" [level=1] [ref=e23]
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: Телефон или email
+          - textbox "+7 (___) ___-__-__ или email" [ref=e27]
+        - generic [ref=e28]:
+          - generic [ref=e29]: Пароль
+          - textbox "Пароль" [ref=e30]
+        - button "Войти" [ref=e31] [cursor=pointer]
+      - paragraph [ref=e32]:
+        - text: Нет аккаунта?
+        - link "Зарегистрироваться" [ref=e33] [cursor=pointer]:
+          - /url: /register

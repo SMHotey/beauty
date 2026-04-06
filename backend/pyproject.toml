@@ -1,0 +1,20 @@
+[tool.black]
+line-length = 120
+target-version = ['py311']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 120
+skip = ["migrations"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "beauty_backend.settings.dev"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+addopts = "-v --tb=short"
+testpaths = ["apps"]
+norecursedirs = ["migrations", "__pycache__", "venv"]
+
+[tool.flake8]
+max-line-length = 120
+exclude = ["migrations", "__pycache__", "venv"]

@@ -1,0 +1,598 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$placeholder$placeholder=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "admin2",
+      "first_name": "Анна",
+      "last_name": "Иванова",
+      "email": "anna@beauty.ru",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$placeholder$placeholder=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "admin3",
+      "first_name": "Петр",
+      "last_name": "Сидоров",
+      "email": "petr@beauty.ru",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.servicecategory",
+    "pk": 1,
+    "fields": {
+      "name": "Парикмахерские услуги",
+      "slug": "hairdressing",
+      "icon": "scissors",
+      "order": 1,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.servicecategory",
+    "pk": 2,
+    "fields": {
+      "name": "Ногтевой сервис",
+      "slug": "nails",
+      "icon": "hand",
+      "order": 2,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.servicecategory",
+    "pk": 3,
+    "fields": {
+      "name": "Косметология",
+      "slug": "cosmetology",
+      "icon": "face",
+      "order": 3,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.servicecategory",
+    "pk": 4,
+    "fields": {
+      "name": "Визаж",
+      "slug": "makeup",
+      "icon": "brush",
+      "order": 4,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.servicecategory",
+    "pk": 5,
+    "fields": {
+      "name": "Массаж",
+      "slug": "massage",
+      "icon": "spa",
+      "order": 5,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Женская стрижка",
+      "slug": "zhenskaya-strizhka",
+      "base_duration_minutes": 60,
+      "base_price": "2500.00",
+      "gender_target": "female",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "Мужская стрижка",
+      "slug": "muzhskaya-strizhka",
+      "base_duration_minutes": 30,
+      "base_price": "1500.00",
+      "gender_target": "male",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "name": "Окрашивание волос",
+      "slug": "okrashivanie-volos",
+      "base_duration_minutes": 120,
+      "base_price": "5000.00",
+      "gender_target": "female",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "name": "Укладка",
+      "slug": "ukladka",
+      "base_duration_minutes": 45,
+      "base_price": "1800.00",
+      "gender_target": "female",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "name": "Детская стрижка",
+      "slug": "detskaya-strizhka",
+      "base_duration_minutes": 30,
+      "base_price": "1000.00",
+      "gender_target": "children",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "name": "Маникюр",
+      "slug": "manikyur",
+      "base_duration_minutes": 60,
+      "base_price": "2000.00",
+      "gender_target": "female",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 7,
+    "fields": {
+      "category": 2,
+      "name": "Педикюр",
+      "slug": "pedikyur",
+      "base_duration_minutes": 90,
+      "base_price": "3000.00",
+      "gender_target": "female",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 8,
+    "fields": {
+      "category": 2,
+      "name": "Наращивание ногтей",
+      "slug": "narashchivanie-nogtey",
+      "base_duration_minutes": 120,
+      "base_price": "4500.00",
+      "gender_target": "female",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 9,
+    "fields": {
+      "category": 3,
+      "name": "Чистка лица",
+      "slug": "chistka-litsa",
+      "base_duration_minutes": 60,
+      "base_price": "3500.00",
+      "gender_target": "unisex",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 10,
+    "fields": {
+      "category": 3,
+      "name": "Пилинг",
+      "slug": "piling",
+      "base_duration_minutes": 45,
+      "base_price": "2500.00",
+      "gender_target": "unisex",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 11,
+    "fields": {
+      "category": 3,
+      "name": "Мезотерапия",
+      "slug": "mezoterapiya",
+      "base_duration_minutes": 30,
+      "base_price": "4000.00",
+      "gender_target": "unisex",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 12,
+    "fields": {
+      "category": 4,
+      "name": "Дневной макияж",
+      "slug": "dnevnoy-makiyazh",
+      "base_duration_minutes": 45,
+      "base_price": "2000.00",
+      "gender_target": "female",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 13,
+    "fields": {
+      "category": 4,
+      "name": "Вечерний макияж",
+      "slug": "vecherniy-makiyazh",
+      "base_duration_minutes": 60,
+      "base_price": "3500.00",
+      "gender_target": "female",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 14,
+    "fields": {
+      "category": 5,
+      "name": "Классический массаж",
+      "slug": "klassicheskiy-massazh",
+      "base_duration_minutes": 60,
+      "base_price": "3000.00",
+      "gender_target": "unisex",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 15,
+    "fields": {
+      "category": 5,
+      "name": "Расслабляющий массаж",
+      "slug": "rasslablyayushchiy-massazh",
+      "base_duration_minutes": 90,
+      "base_price": "4500.00",
+      "gender_target": "unisex",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.master",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "phone": "+79001234567",
+      "photo": null,
+      "bio": "Стилист с 10-летним опытом",
+      "is_active": true,
+      "working_hours": {
+        "0": [{"start": "09:00", "end": "18:00"}],
+        "1": [{"start": "09:00", "end": "18:00"}],
+        "2": [{"start": "09:00", "end": "18:00"}],
+        "3": [{"start": "09:00", "end": "18:00"}],
+        "4": [{"start": "09:00", "end": "18:00"}],
+        "5": [{"start": "10:00", "end": "16:00"}],
+        "6": null
+      },
+      "break_slots": [
+        {"start": "13:00", "end": "14:00", "weekday": 0},
+        {"start": "13:00", "end": "14:00", "weekday": 1},
+        {"start": "13:00", "end": "14:00", "weekday": 2},
+        {"start": "13:00", "end": "14:00", "weekday": 3},
+        {"start": "13:00", "end": "14:00", "weekday": 4}
+      ],
+      "vacations": [],
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.master",
+    "pk": 2,
+    "fields": {
+      "user": 3,
+      "phone": "+79007654321",
+      "photo": null,
+      "bio": "Косметолог-дерматолог",
+      "is_active": true,
+      "working_hours": {
+        "0": [{"start": "09:00", "end": "18:00"}],
+        "1": [{"start": "09:00", "end": "18:00"}],
+        "2": [{"start": "09:00", "end": "18:00"}],
+        "3": [{"start": "09:00", "end": "18:00"}],
+        "4": [{"start": "09:00", "end": "18:00"}],
+        "5": [{"start": "10:00", "end": "16:00"}],
+        "6": null
+      },
+      "break_slots": [
+        {"start": "13:00", "end": "14:00", "weekday": 0},
+        {"start": "13:00", "end": "14:00", "weekday": 1},
+        {"start": "13:00", "end": "14:00", "weekday": 2},
+        {"start": "13:00", "end": "14:00", "weekday": 3},
+        {"start": "13:00", "end": "14:00", "weekday": 4}
+      ],
+      "vacations": [],
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 1,
+    "fields": {
+      "master": 1,
+      "service": 1,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 2,
+    "fields": {
+      "master": 1,
+      "service": 3,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 3,
+    "fields": {
+      "master": 1,
+      "service": 4,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 4,
+    "fields": {
+      "master": 1,
+      "service": 6,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 5,
+    "fields": {
+      "master": 1,
+      "service": 7,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 6,
+    "fields": {
+      "master": 1,
+      "service": 12,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 7,
+    "fields": {
+      "master": 1,
+      "service": 13,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 8,
+    "fields": {
+      "master": 2,
+      "service": 2,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 9,
+    "fields": {
+      "master": 2,
+      "service": 9,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 10,
+    "fields": {
+      "master": 2,
+      "service": 10,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 11,
+    "fields": {
+      "master": 2,
+      "service": 11,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 12,
+    "fields": {
+      "master": 2,
+      "service": 14,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "staff.masterservice",
+    "pk": 13,
+    "fields": {
+      "master": 2,
+      "service": 15,
+      "custom_price": null,
+      "custom_duration_minutes": null,
+      "is_enabled": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "promotions.setting",
+    "pk": 1,
+    "fields": {
+      "key": "APPOINTMENT_BUFFER_MINUTES",
+      "value": "10",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "promotions.setting",
+    "pk": 2,
+    "fields": {
+      "key": "CANCELLATION_HOURS",
+      "value": "2",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "promotions.setting",
+    "pk": 3,
+    "fields": {
+      "key": "BONUS_PERCENT",
+      "value": "5",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "promotions.setting",
+    "pk": 4,
+    "fields": {
+      "key": "BONUS_MAX_PERCENT_OF_CHECK",
+      "value": "30",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "promotions.setting",
+    "pk": 5,
+    "fields": {
+      "key": "REFERRAL_BONUS",
+      "value": "500",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]

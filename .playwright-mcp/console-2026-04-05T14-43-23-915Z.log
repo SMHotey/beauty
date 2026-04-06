@@ -1,0 +1,32 @@
+[    2168ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-NUMECXU6.js?v=04bd599d:21550
+[    2333ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[    2333ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[    2693ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/auth/profile/' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2696ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/auth/profile/:0
+[    2698ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/services/service-categories/' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2699ms] [ERROR] AxiosError: Network Error
+    at XMLHttpRequest.handleError (http://127.0.0.1:5173/node_modules/.vite/deps/axios.js?v=04bd599d:1717:19)
+    at Axios.request (http://127.0.0.1:5173/node_modules/.vite/deps/axios.js?v=04bd599d:2330:41)
+    at async Promise.all (index 0) @ http://127.0.0.1:5173/src/utils/apiErrors.ts:2
+[    2700ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/services/service-categories/:0
+[    2713ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/promotions/promotions/' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2713ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/promotions/promotions/:0
+[    2719ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/auth/profile/' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2720ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/auth/profile/:0
+[    2733ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/promotions/promotions/' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2733ms] [ERROR] AxiosError: Network Error
+    at XMLHttpRequest.handleError (http://127.0.0.1:5173/node_modules/.vite/deps/axios.js?v=04bd599d:1717:19)
+    at Axios.request (http://127.0.0.1:5173/node_modules/.vite/deps/axios.js?v=04bd599d:2330:41)
+    at async Promise.all (index 3) @ http://127.0.0.1:5173/src/utils/apiErrors.ts:2
+[    2734ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/promotions/promotions/:0
+[    2739ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/services/service-categories/' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2739ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/services/service-categories/:0
+[    2763ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/staff/masters/?limit=4' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2764ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/staff/masters/?limit=4:0
+[    2776ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/services/services/?limit=6' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2776ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/services/services/?limit=6:0
+[    2793ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/staff/masters/?limit=4' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2793ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/staff/masters/?limit=4:0
+[    2823ms] [ERROR] Access to XMLHttpRequest at 'http://localhost:8000/api/v1/services/services/?limit=6' from origin 'http://127.0.0.1:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://127.0.0.1:5173/:0
+[    2824ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:8000/api/v1/services/services/?limit=6:0
+[   40898ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&h=900&fit=crop:0

@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  body {
+    @apply bg-neutral-bg text-gray-900;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 active:bg-primary-700 text-white font-semibold py-3 px-8 rounded-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-primary-500/25 hover:shadow-xl hover:shadow-primary-500/30 hover:-translate-y-0.5;
+  }
+  .btn-secondary {
+    @apply bg-white border-2 border-gray-200 text-gray-700 hover:border-primary-300 hover:text-primary-600 font-semibold py-3 px-8 rounded-2xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 hover:-translate-y-0.5;
+  }
+  .btn-danger {
+    @apply bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-2xl transition-all duration-300;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-200 bg-white;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-soft border border-gray-100/50 p-6 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-primary-100;
+  }
+  .card-flat {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100/50 p-6;
+  }
+  .skeleton {
+    @apply animate-pulse bg-gray-200 rounded-xl;
+  }
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20;
+  }
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold;
+  }
+  .badge-primary {
+    @apply bg-primary-100 text-primary-700;
+  }
+  .badge-rose {
+    @apply bg-rose-100 text-rose-700;
+  }
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight;
+  }
+  .section-subtitle {
+    @apply text-lg text-gray-500 mt-3 max-w-2xl;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-rose-500 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}

@@ -1,0 +1,43 @@
+[     347ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-NUMECXU6.js?v=04bd599d:21550
+[     531ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[     531ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[     923ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[     939ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[   39056ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&h=400&fit=crop:0
+[   39771ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&h=400&fit=crop:0
+[   39773ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&h=400&fit=crop:0
+[   39806ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&h=900&fit=crop:0
+[   39806ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop:0
+[   39806ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop:0
+[   77628ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&h=400&fit=crop:0
+[   78325ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&h=900&fit=crop:0
+[   78325ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop:0
+[   78356ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&h=400&fit=crop:0
+[   78404ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop:0
+[   78420ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=400&fit=crop:0
+[  116197ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&h=400&fit=crop:0
+[  116851ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop:0
+[  116851ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&h=400&fit=crop:0
+[  116867ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop:0
+[  116947ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop:0
+[  116995ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=400&fit=crop:0
+[  154746ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=400&fit=crop:0
+[  155408ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop:0
+[  155422ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=400&fit=crop:0
+[  155422ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&h=400&fit=crop:0
+[  155539ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop:0
+[  155557ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&h=400&fit=crop:0
+[  193342ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&h=400&fit=crop:0
+[  193974ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&h=400&fit=crop:0
+[  193974ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop:0
+[  194101ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&h=400&fit=crop:0
+[  194117ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop:0
+[  195039ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=400&fit=crop:0
+[  223607ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop:0
+[  232563ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop:0
+[  232566ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&h=400&fit=crop:0
+[  232687ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&h=400&fit=crop:0
+[  232703ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=400&fit=crop:0
+[  233623ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=400&fit=crop:0
+[  262185ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=400&fit=crop:0
+[  271136ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop:0

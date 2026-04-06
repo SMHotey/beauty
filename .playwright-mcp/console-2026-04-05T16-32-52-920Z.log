@@ -1,0 +1,73 @@
+[      25ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-NUMECXU6.js?v=04bd599d:21550
+[     167ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-NUMECXU6.js?v=04bd599d:21550
+[     224ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[     224ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[     253ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[     262ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[   38800ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&h=900&fit=crop:0
+[   39340ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop:0
+[   39357ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop:0
+[   39357ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop:0
+[   39372ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=400&fit=crop:0
+[   39372ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=400&fit=crop:0
+[   77355ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop:0
+[   77898ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=400&fit=crop:0
+[   77929ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&h=400&fit=crop:0
+[   77945ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop:0
+[   77961ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&h=400&fit=crop:0
+[   82434ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&h=400&fit=crop:0
+[  115959ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&h=400&fit=crop:0
+[  116482ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&h=400&fit=crop:0
+[  116514ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&h=400&fit=crop:0
+[  116545ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop:0
+[  116546ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=400&fit=crop:0
+[  120978ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop:0
+[  154569ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop:0
+[  155064ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=400&fit=crop:0
+[  155128ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=400&fit=crop:0
+[  155128ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&h=400&fit=crop:0
+[  243146ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop:0
+[  243161ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&h=400&fit=crop:0
+[  243162ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&h=400&fit=crop:0
+[  243176ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&h=400&fit=crop:0
+[  243176ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&h=400&fit=crop:0
+[  243192ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop:0
+[  281721ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop:0
+[  332898ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-NUMECXU6.js?v=04bd599d:21550
+[  332966ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[  332967ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[  333307ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[  333318ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[  371516ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&h=900&fit=crop:0
+[  371896ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=400&fit=crop:0
+[  371921ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop:0
+[  371922ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&h=400&fit=crop:0
+[  371955ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop:0
+[  371986ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop:0
+[  410070ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&h=400&fit=crop:0
+[  410457ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=600&h=400&fit=crop:0
+[  410458ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&h=400&fit=crop:0
+[  410502ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop:0
+[  410503ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&h=400&fit=crop:0
+[  410525ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=400&fit=crop:0
+[  447084ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-NUMECXU6.js?v=04bd599d:21550
+[  447179ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[  447179ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[  447205ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[  447216ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[  448668ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&h=900&fit=crop:0
+[  449120ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop:0
+[  449135ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop:0
+[  449247ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop:0
+[  453497ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&h=400&fit=crop:0
+[  453615ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop:0
+[  454052ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://127.0.0.1:5173/login:0
+[  469102ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:8000/api/v1/auth/login/:0
+[  479910ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:8000/api/v1/auth/login/:0
+[  482623ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:5173/node_modules/.vite/deps/chunk-NUMECXU6.js?v=04bd599d:21550
+[  482674ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[  482674ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:5173/node_modules/.vite/deps/react-router-dom.js?v=04bd599d:4435
+[  482688ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[  482694ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:8000/api/v1/auth/profile/:0
+[  482780ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://127.0.0.1:5173/login:0
+[  492803ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ http://localhost:8000/api/v1/auth/login/:0

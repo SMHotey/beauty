@@ -1,0 +1,50 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "B Beauty" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e9]: B
+        - generic [ref=e10]: Beauty
+      - navigation [ref=e11]:
+        - link "Главная" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "Услуги" [ref=e13] [cursor=pointer]:
+          - /url: /services
+        - link "Мастера" [ref=e14] [cursor=pointer]:
+          - /url: /masters
+        - link "Акции" [ref=e15] [cursor=pointer]:
+          - /url: /promotions
+        - link "Контакты" [ref=e16] [cursor=pointer]:
+          - /url: /contacts
+      - generic [ref=e17]:
+        - link "Войти" [ref=e18] [cursor=pointer]:
+          - /url: /login
+        - link "Регистрация" [ref=e19] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e20]:
+    - generic [ref=e362]:
+      - generic [ref=e363]:
+        - img "Чистка лица" [ref=e364]
+        - generic [ref=e366]:
+          - link "Назад к услугам" [ref=e367] [cursor=pointer]:
+            - /url: /services
+            - img [ref=e368]
+            - text: Назад к услугам
+          - heading "Чистка лица" [level=1] [ref=e370]
+          - paragraph [ref=e371]: Косметология
+      - generic [ref=e373]:
+        - generic [ref=e374]:
+          - generic [ref=e375]:
+            - generic [ref=e376]: 3 500 ₽
+            - generic [ref=e377]: Стоимость
+          - generic [ref=e378]:
+            - generic [ref=e379]: "60"
+            - generic [ref=e380]: Минут
+        - generic [ref=e381]:
+          - heading "Мастера" [level=3] [ref=e382]
+          - link "П Петр Сидоров" [ref=e384] [cursor=pointer]:
+            - /url: /masters/2
+            - generic [ref=e385]: П
+            - text: Петр Сидоров
+        - link "Записаться на услугу" [ref=e386] [cursor=pointer]:
+          - /url: /booking?service=9
