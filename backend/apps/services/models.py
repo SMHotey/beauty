@@ -3,6 +3,10 @@ from apps.core.models import BaseModel
 
 
 class ServiceCategory(BaseModel):
+    """
+    Модель категории услуг салона красоты.
+    Используется для группировки услуг по типам (парикмахерские, ногтевой сервис и т.д.).
+    """
     name = models.CharField(max_length=100, unique=True, verbose_name='Название')
     slug = models.SlugField(max_length=100, unique=True, verbose_name='Слаг')
     icon = models.CharField(max_length=50, verbose_name='Иконка')
@@ -14,10 +18,15 @@ class ServiceCategory(BaseModel):
         ordering = ['order', 'name']
 
     def __str__(self):
+        """Возвращает название категории как строковое представление"""
         return self.name
 
 
 class Service(BaseModel):
+    """
+    Модель конкретной услуги салона красоты.
+    Содержит информацию о названии, описании, длительности, цене и целевой аудитории.
+    """
     GENDER_CHOICES = [
         ('female', 'Женская'),
         ('male', 'Мужская'),
@@ -39,4 +48,10 @@ class Service(BaseModel):
         ordering = ['category__order', 'name']
 
     def __str__(self):
+        """Возвращает полное название услуги с категорией"""
         return f"{self.category.name} — {self.name}"
+    
+    @property
+    def duration_hours(self):
+        """Возвращает длительность услуги в часах для удобства отображения"""
+        return self.base_duration_minutes / 60

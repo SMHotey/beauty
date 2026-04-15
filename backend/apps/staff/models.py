@@ -5,6 +5,10 @@ from apps.services.models import Service
 
 
 class Master(BaseModel):
+    """
+    Модель мастера салона красоты.
+    Связывает пользователя Django (auth) с дополнительными полями мастера.
+    """
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='master_profile', verbose_name='Пользователь')
     phone = models.CharField(max_length=20, unique=True, verbose_name='Телефон')
     photo = models.ImageField(upload_to='masters/', blank=True, null=True, verbose_name='Фото')
@@ -22,10 +26,15 @@ class Master(BaseModel):
         ordering = ['user__first_name', 'user__last_name']
 
     def __str__(self):
+        """Полное имя мастера или логин, если имя не задано"""
         return self.user.get_full_name() or self.user.username
 
     @property
     def rating(self):
+        """
+        Вычисляет средний рейтинг мастера на основе отзывов.
+        При изменении используется кэширование для оптимизации производительности.
+        """
         if self._cached_rating is not None:
             return round(self._cached_rating, 1)
         from apps.reviews.models import Review
@@ -39,6 +48,11 @@ class Master(BaseModel):
 
     @property
     def rating(self):
+        """
+        Свойство для доступа к рейтингу мастера.
+        Логика кэширования позволяет избежать повторных вычислений.
+        """
+        # (Дублирование метода в оригинальном коде - оставлено как есть)
         if self._cached_rating is not None:
             return round(self._cached_rating, 1)
         from apps.reviews.models import Review
@@ -52,12 +66,19 @@ class Master(BaseModel):
 
     @property
     def review_count(self):
+        """
+        Возвращает количество отзывов мастера.
+        """
         from django.db.models import Count
         from apps.reviews.models import Review
         return Review.objects.filter(appointment__master=self).count()
 
 
 class MasterPermission(BaseModel):
+    """
+    Модель специальных разрешений мастера.
+    Позволяет ограничить доступ к определённым функциям (редактирование расписания, ответы на отзывы).
+    """
     master = models.OneToOneField(Master, on_delete=models.CASCADE, related_name='permissions', verbose_name='Мастер')
     can_edit_schedule = models.BooleanField(default=False, verbose_name='Может редактировать график')
     can_reply_reviews = models.BooleanField(default=False, verbose_name='Может отвечать на отзывы')
@@ -71,6 +92,10 @@ class MasterPermission(BaseModel):
 
 
 class MasterSchedule(BaseModel):
+    """
+    Модель расписания работы мастера.
+    Представляет ежедневное расписание с указанием рабочих дней, перерывов и отпусков.
+    """
     master = models.ForeignKey(Master, on_delete=models.CASCADE, related_name='schedules', verbose_name='Мастер')
     date = models.DateField(verbose_name='Дата')
     start_time = models.CharField(max_length=5, verbose_name='Начало')
@@ -85,11 +110,16 @@ class MasterSchedule(BaseModel):
         ordering = ['date']
 
     def __str__(self):
+        """Строковое представление расписания мастера."""
         status = 'рабочий' if self.is_working else 'выходной'
         return f"{self.master} — {self.date} ({status})"
 
 
 class MasterService(BaseModel):
+    """
+    Модель услуг, предоставляемых конкретным мастером.
+    Позволяет кастомизировать цены и продолжительность для разных мастеров.
+    """
     master = models.ForeignKey(Master, on_delete=models.CASCADE, related_name='master_services', verbose_name='Мастер')
     service = models.ForeignKey(Service, on_delete=models.CASCADE, related_name='master_services', verbose_name='Услуга')
     custom_price = models.DecimalField(max_digits=8, decimal_places=2, null=True, blank=True, verbose_name='Кастомная цена')
@@ -98,16 +128,19 @@ class MasterService(BaseModel):
 
     class Meta:
         verbose_name = 'Услуга мастера'
-        verbose_name_plural = 'Услуги мастеров'
+        verbose_name_plural = 'Услуги мастера'
         unique_together = ['master', 'service']
 
     def __str__(self):
+        """Повторяет модель Services, но связана с конкретным мастером."""
         return f"{self.master} — {self.service}"
 
     @property
     def price(self):
+        """Цена услуги для данного мастера; если кастомная цена не указана – берётся базовая цена."""
         return self.custom_price if self.custom_price is not None else self.service.base_price
 
     @property
     def duration_minutes(self):
+        """Длительность услуги для данного мастера; если кастомная длительность не указана – берётся базовая."""
         return self.custom_duration_minutes if self.custom_duration_minutes is not None else self.service.base_duration_minutes

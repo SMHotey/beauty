@@ -6,6 +6,10 @@ from apps.services.models import Service
 
 
 class Appointment(BaseModel):
+    """
+    Модель записи посещения салона красоты.
+    Содержит информацию о клиенте, мастере, времени, статусе и оплате.
+    """
     STATUS_CHOICES = [
         ('pending', 'Ожидает'),
         ('confirmed', 'Подтверждена'),
@@ -36,11 +40,17 @@ class Appointment(BaseModel):
         ordering = ['-datetime_start']
 
     def __str__(self):
+        """Строковое представление встречи с указанием клиента, мастера и времени начала."""
         client_str = self.client.phone if self.client else 'Гость'
         return f"{client_str} — {self.master} — {self.datetime_start}"
-
+    
     def save(self, *args, **kwargs):
-        if self.pk:
+        """
+        Перезаписывает метод сохранения модели.
+        При создании/обновлении записи рассчитывается итоговая цена
+        на основе услуг, включённых в запись.
+        """
+        if self.pk:  # Если объект уже существует обновляем
             total = self.services.aggregate(
                 total=models.Sum(models.F('price_at_booking'))
             )['total']
@@ -50,6 +60,10 @@ class Appointment(BaseModel):
 
 
 class AppointmentService(BaseModel):
+    """
+    Сопутствующая модель для отслеживания услуг, включённых в запись.
+    Позволяет хранить индивидуальные цены и продолжительность каждой услуги.
+    """
     appointment = models.ForeignKey(Appointment, on_delete=models.CASCADE, related_name='services', verbose_name='Запись')
     service = models.ForeignKey(Service, on_delete=models.CASCADE, verbose_name='Услуга')
     price_at_booking = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='Цена на момент записи')
@@ -60,4 +74,5 @@ class AppointmentService(BaseModel):
         verbose_name_plural = 'Услуги в записях'
 
     def __str__(self):
+        """Возвращает строку вида: '{запись} — {услуга} ({цена})'"""
         return f"{self.appointment} — {self.service} ({self.price_at_booking})"

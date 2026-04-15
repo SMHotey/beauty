@@ -45,6 +45,10 @@ celery -A beauty_backend worker -l info -P eventlet
 black . && isort .
 flake8
 pre-commit run --all-files
+
+# Pre-commit hooks (install once)
+pip install pre-commit
+pre-commit install
 ```
 
 ### Frontend (`cd frontend`)
@@ -65,6 +69,15 @@ npx vitest           # watch mode
 # One-command launcher — auto-checks deps, runs migrations, starts both servers
 python start.py
 ```
+
+**start.py capabilities:**
+- Auto-creates Python virtual environment if missing
+- Installs backend and frontend dependencies
+- Runs migrations and loads initial data
+- Handles port conflicts (kills existing processes)
+- Unicode-aware for Windows console
+- Streams real-time output from both servers
+- Graceful shutdown on Ctrl+C
 
 ### Docker
 
@@ -140,8 +153,13 @@ components/       # Layout, ProtectedRoute, AdminRoute, MasterRoute
 - **Path alias:** `@/` → `src/` (configured in both `tsconfig.json` and `vite.config.ts`)
 - **Vite proxy:** `/api`, `/static`, `/admin` → `http://localhost:8000`
   - `/admin` has special bypass: HTML requests are NOT proxied (served by Vite instead)
+  - API requests to `/admin/` endpoints still work through proxy
 - **TypeScript:** `noUnusedLocals: false`, `noUnusedParameters: false` — unused imports/params do NOT cause build failures
 - **Build order:** `npm run build` runs `tsc` first, then `vite build`
+- **PWA:** Enabled with `vite-plugin-pwa` - includes service worker, manifest, and offline support
+  - **Manifest:** `public/manifest.json` with app icons and metadata
+  - **Service Worker:** Auto-generated with offline caching capabilities
+  - **Installable:** Supports app-like experience on mobile devices
 
 ### Ports
 
@@ -181,6 +199,11 @@ All endpoints under `/api/v1/`. Swagger: `http://localhost:8000/api/docs/swagger
 - **Settings:** `DJANGO_SETTINGS_MODULE = beauty_backend.settings.dev`
 - **Fixtures** (`backend/conftest.py`): `api_client`, `user`, `admin_user`, `staff_user`, `master_user`, `master`, `category`, `service`, `master_service`, `client`, `future_time`, `appointment`, `completed_appointment`, `review`, `active_promotion`, `setting`
 - **Integration tests:** `python run_tests.py` — uses Django TestClient directly (NOT pytest), creates its own test data, tests full API CRUD
+
+### Frontend (Vitest)
+- **Config:** `globals: true`, `environment: 'jsdom'`, setup: `src/test/setup.ts`
+- **Stack:** Vitest + Testing Library + MSW for API mocking
+- **Pattern:** `src/**/*.test.{ts,tsx}`
 
 ### Frontend (Vitest)
 - **Config:** `globals: true`, `environment: 'jsdom'`, setup: `src/test/setup.ts`
@@ -228,6 +251,8 @@ All endpoints under `/api/v1/`. Swagger: `http://localhost:8000/api/docs/swagger
 - **Vite `/admin` proxy bypass** — HTML requests to `/admin` are served by Vite, not proxied to Django. API requests to `/admin/` endpoints still work.
 - **`as any` in App.tsx** — `store.dispatch(fetchProfile() as any)` — existing pattern, don't "fix" without understanding why
 - **`db.sqlite3` lives in project root** (not in `backend/`)
+- **Unicode handling:** `start.py` has special Windows Unicode handling for console output
+- **Port conflicts:** `start.py` automatically kills processes using ports 8000/5173
 
 ---
 
@@ -272,6 +297,11 @@ All endpoints under `/api/v1/`. Swagger: `http://localhost:8000/api/docs/swagger
 | `ALLOWED_HOSTS` | `localhost,127.0.0.1,backend,nginx` | Django allowed hosts |
 | `VITE_API_URL` | `http://localhost:8000/api/v1` | Vite API base URL |
 
+### Pre-commit Hooks
+- **black:** Code formatting (Python)
+- **isort:** Import sorting (with `--profile black`)
+- **flake8:** Linting (max line length: 120, excludes migrations)
+
 ---
 
 ## Common Pitfalls
@@ -294,6 +324,12 @@ All endpoints under `/api/v1/`. Swagger: `http://localhost:8000/api/docs/swagger
 - **Admin Panel**: `http://localhost:8000/admin/`
 - **Frontend PWA**: `http://localhost:5173/`
 
+### Docker Volumes
+- **postgres_data**: PostgreSQL database persistence
+- **redis_data**: Redis data persistence  
+- **static_volume**: Collected static files
+- **media_volume**: User uploaded media
+
 ---
 
 ## Notes for Future Sessions
@@ -302,6 +338,10 @@ All endpoints under `/api/v1/`. Swagger: `http://localhost:8000/api/docs/swagger
 - Avoid adding new dependencies without updating the Dockerfile and `requirements.txt`.
 - When adding new tests, ensure they run with `npx vitest run` and `pytest` without flake8 errors.
 - For any new feature, remember to update the API docs and Swagger if necessary.
+
+---
+
+## End of File
 
 ---
 

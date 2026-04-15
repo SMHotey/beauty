@@ -35,6 +35,21 @@ import ProtectedRoute from './components/ProtectedRoute'
 import AdminRoute from './components/AdminRoute'
 import MasterRoute from './components/MasterRoute'
 
+/**
+ * Основной компонент приложения.
+ * Описывает роутинг и точку входа для всех основных страниц.
+ * 
+ * Роутинг:
+ *  - ОбщеДоступные маршруты: /, /services, /masters, /booking, /promotions, /contacts, /login, /register
+ *  - Защищенные маршруты для авторизованных пользователей: /profile, /profile/appointments, /profile/favorites
+ *  - Админские маршруты (только для персонала с is_staff=True): /admin/*
+ *  - Маршруты для мастеров: /master/*
+ * 
+ * Используются специальные компоненты-обертки:
+ *  - <ProtectedRoute> — проверка авторизации
+ *  - <AdminRoute> — проверка прав администратора
+ *  - <MasterRoute> — проверка прав мастера
+ */
 export default function App() {
   useEffect(() => {
     store.dispatch(fetchProfile() as any)
@@ -53,30 +68,33 @@ export default function App() {
         <Route path="contacts" element={<ContactsPage />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="register" element={<RegisterPage />} />
+      </Route>
 
-        <Route path="profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
-        <Route path="profile/appointments" element={<ProtectedRoute><AppointmentsPage /></ProtectedRoute>} />
-        <Route path="profile/favorites" element={<ProtectedRoute><FavoritesPage /></ProtectedRoute>} />
+      {/* Защищенные маршруты, доступные только авторизованным пользователям */}
+      <Route path="profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
+      <Route path="profile/appointments" element={<ProtectedRoute><AppointmentsPage /></ProtectedRoute>} />
+      <Route path="profile/favorites" element={<ProtectedRoute><FavoritesPage /></ProtectedRoute>} />
 
-        <Route path="admin" element={<AdminRoute><AdminLayout /></AdminRoute>}>
-          <Route index element={<AdminDashboardPage />} />
-          <Route path="appointments" element={<AdminAppointmentsPage />} />
-          <Route path="calendar" element={<AdminCalendarPage />} />
-          <Route path="masters" element={<AdminMastersPage />} />
-          <Route path="masters/:id" element={<MasterProfilePage />} />
-          <Route path="services" element={<AdminServicesPage />} />
-          <Route path="promotions" element={<AdminPromotionsPage />} />
-          <Route path="reports" element={<AdminReportsPage />} />
-          <Route path="blacklist" element={<AdminBlacklistPage />} />
-          <Route path="clients/:id" element={<ClientProfilePage />} />
-        </Route>
+      {/* Админские маршруты, доступные только пользователям с правами администратора */}
+      <Route path="admin" element={<AdminRoute><AdminLayout /></AdminRoute>}>
+        <Route index element={<AdminDashboardPage />} />
+        <Route path="appointments" element={<AdminAppointmentsPage />} />
+        <Route path="calendar" element={<AdminCalendarPage />} />
+        <Route path="masters" element={<AdminMastersPage />} />
+        <Route path="masters/:id" element={<MasterProfilePage />} />
+        <Route path="services" element={<AdminServicesPage />} />
+        <Route path="promotions" element={<AdminPromotionsPage />} />
+        <Route path="reports" element={<AdminReportsPage />} />
+        <Route path="blacklist" element={<AdminBlacklistPage />} />
+        <Route path="clients/:id" element={<ClientProfilePage />} />
+      </Route>
 
-        <Route path="master" element={<MasterRoute><MasterLayout /></MasterRoute>}>
-          <Route index element={<MasterDashboardPage />} />
-          <Route path="appointments" element={<MasterAppointmentsPage />} />
-          <Route path="reviews" element={<MasterReviewsPage />} />
-          <Route path="schedule" element={<MasterSchedulePage />} />
-        </Route>
+      {/* Маршруты для мастеров, доступные только проверенным мастерам */}
+      <Route path="master" element={<MasterRoute><MasterLayout /></MasterRoute>}>
+        <Route index element={<MasterDashboardPage />} />
+        <Route path="appointments" element={<MasterAppointmentsPage />} />
+        <Route path="reviews" element={<MasterReviewsPage />} />
+        <Route path="schedule" element={<MasterSchedulePage />} />
       </Route>
     </Routes>
   )
